@@ -82,6 +82,7 @@ node() {
           )
 
       } catch (Exception err) {
+        final scmVars = checkout(scm)
         def url = sh(returnStdout: true, script: 'git config remote.origin.url').trim()
         currentBuild.result = 'FAILURE'
         notifyAtomist(
