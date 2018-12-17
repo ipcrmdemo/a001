@@ -82,7 +82,7 @@ node() {
           )
 
       } catch (Exception err) {
-
+        def url = sh(returnStdout: true, script: 'git config remote.origin.url').trim()
         currentBuild.result = 'FAILURE'
         notifyAtomist(
           ATOMIST_WORKSPACES,
