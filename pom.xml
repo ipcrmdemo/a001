@@ -66,6 +66,16 @@
 
 	<repositories>
 		<repository>
+<id>dev-azure-com-mcadorette-mcadorette</id>
+<url>https://pkgs.dev.azure.com/mcadorette/_packaging/mcadorette/maven/v1</url>
+<releases>
+<enabled>true</enabled>
+</releases>
+<snapshots>
+<enabled>true</enabled>
+</snapshots>
+</repository>
+		<repository>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
@@ -74,5 +84,17 @@
 			<url>https://dl.bintray.com/atomist/atomist</url>
 		</repository>
 	</repositories>
+	<distributionManagement>
+		<repository>
+<id>dev-azure-com-mcadorette-mcadorette</id>
+<url>https://pkgs.dev.azure.com/mcadorette/_packaging/mcadorette/maven/v1</url>
+<releases>
+<enabled>true</enabled>
+</releases>
+<snapshots>
+<enabled>true</enabled>
+</snapshots>
+</repository>
+  </distributionManagement>
 
 </project>
